@@ -328,4 +328,7 @@ CMakeFiles/CG_TP_3.dir/src/main.cpp.o: /home/tiago/CG_TP_3/src/main.cpp \
  /usr/include/glm/detail/func_integer.inl /usr/include/GL/glew.h \
  /usr/include/GL/glu.h /usr/include/GL/gl.h \
  /home/tiago/CG_TP_3/src/TextureLoader.hpp /usr/include/GLFW/glfw3.h \
- /usr/include/c++/13/iostream
+ /usr/include/c++/13/iostream /usr/include/c++/13/vector \
+ /usr/include/c++/13/bits/stl_vector.h \
+ /usr/include/c++/13/bits/stl_bvector.h \
+ /usr/include/c++/13/bits/vector.tcc

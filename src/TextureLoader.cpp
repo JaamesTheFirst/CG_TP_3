@@ -114,7 +114,8 @@ bool LoadTexture2D(const std::filesystem::path& path,
 
     glGenTextures(1, &outTexture);
     glBindTexture(GL_TEXTURE_2D, outTexture);
-    glTexImage2D(GL_TEXTURE_2D, 0, GL_SRGB8_ALPHA8, static_cast<GLsizei>(width),
+    // Store as linear RGBA8 to avoid unintended double sRGB conversions in passes.
+    glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA8, static_cast<GLsizei>(width),
                  static_cast<GLsizei>(height), 0, GL_RGBA, GL_UNSIGNED_BYTE, imageData.data());
     glGenerateMipmap(GL_TEXTURE_2D);
 
